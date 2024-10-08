@@ -54,6 +54,7 @@ img {
     overflow: hidden;
 }
 
+
 .section {
     padding: 120px 0;
 }
@@ -75,7 +76,7 @@ img {
     align-items: center;
 }
 
-.header-nav {
+*/ .header-nav {
     display: flex;
     align-items: center;
     line-height: 1.5;
