@@ -83,6 +83,7 @@ button {
     width: 1px;
 }
 
+/*
 @media screen and (min-width:768px) {
     .container {
         max-width: 768px;
@@ -94,19 +95,19 @@ button {
         max-width: 1158px;
         padding: 0 15px;
     }
-}
+}*/
 
 /* #region first mobile */
 
 /* #region header */
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 
     .menu-list,
     .header-contacts {
         display: none;
     }
-}
+}*/
 
 .header {
     background-color: var(--white);
