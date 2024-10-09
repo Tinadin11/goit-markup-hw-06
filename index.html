@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container">
         <div class="container-mob">
           <a class="logo" href="./index.html"
@@ -122,13 +122,13 @@
           <address class="contacts-tablet">
             <ul class="contacts-list-tablet">
               <li class="contacts-item-tablet">
-                <a class="contacts-link-tablet" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                <a class="contacts-link-tablet" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="contacts-item-tablet">
-                <a class="contacts-link-tablet" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+                <a class="contacts-link-tablet" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -139,10 +139,10 @@
 
     <main>
       <!-- #region hero image -->
-      <section class="hero">
+      <section class="section section-hero">
         <div class="hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button" data-modal-open>
+          <button class="hero-btn" type="button" title="#">
             Order Service
           </button>
         </div>
@@ -150,7 +150,7 @@
       <!-- #endregion hero image -->
 
       <!-- #region section 1 -->
-      <section class="features">
+      <section class="section section-features">
         <div class="container features-container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list">
@@ -208,7 +208,7 @@
       <!-- #endregion section 1 -->
 
       <!-- #region section 2 -->
-      <section class="team">
+      <section class="section section-team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -402,7 +402,7 @@
       <!-- #endregion section 2 -->
 
       <!-- #region section 3 -->
-      <section class="portfolio">
+      <section class="section section-portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -410,34 +410,32 @@
               <div class="port-img-overlay">
                 <picture>
                   <source
-                    media="(min-width: 1158px)"
+                    media="(min-width: 320px)"
                     srcset="
-                      ./images/our-portfolio/banking-desk-min.jpg    1x,
-                      ./images/our-portfolio/banking-desk@2x-min.jpg 2x
+                      ./images/our-portfolio/banking-mob-min.jpg    1x,
+                      ./images/our-portfolio/banking-mob@2x-min.jpg 2x
                     "
-                    width="360"
                   />
+
                   <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/our-portfolio/banking-tab-min.jpg    1x,
                       ./images/our-portfolio/banking-tab@2x-min.jpg 2x
                     "
-                    width="356"
                   />
+
                   <source
-                    media="(min-width: 767px)"
+                    media="(min-width: 1158px)"
                     srcset="
-                      ./images/our-portfolio/banking-mob-min.jpg    1x,
-                      ./images/our-portfolio/banking-mob@2x-min.jpg 2x
+                      ./images/our-portfolio/banking-desk-min.jpg    1x,
+                      ./images/our-portfolio/banking-desk@2x-min.jpg 2x
                     "
-                    width="288"
                   />
 
                   <img
                     src="./images/our-portfolio/banking-desk-min.jpg"
                     alt="portfolio-1"
-                    width="360"
                   />
                 </picture>
 
@@ -456,28 +454,27 @@
               <div class="port-img-overlay">
                 <picture>
                   <source
-                    media="(min-width: 1158px)"
+                    media="(min-width: 320px)"
                     srcset="
-                      ./images/our-portfolio/cash-desk-min.jpg    1x,
-                      ./images/our-portfolio/cash-desk@2x-min.jpg 2x
+                      ./images/our-portfolio/cash-mob-min.jpg    1x,
+                      ./images/our-portfolio/cash-mob@2x-min.jpg 2x
                     "
-                    width="360"
                   />
+
                   <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/our-portfolio/cash-tab-min.jpg    1x,
                       ./images/our-portfolio/cash-tab@2x-min.jpg 2x
                     "
-                    width="356"
                   />
+
                   <source
-                    media="(max-width: 767px)"
+                    media="(min-width: 1158px)"
                     srcset="
-                      ./images/our-portfolio/cash-mob-min.jpg    1x,
-                      ./images/our-portfolio/cash-mob@2x-min.jpg 2x
+                      ./images/our-portfolio/cash-desk-min.jpg    1x,
+                      ./images/our-portfolio/cash-desk@2x-min.jpg 2x
                     "
-                    width="288"
                   />
 
                   <img
@@ -501,28 +498,26 @@
               <div class="port-img-overlay">
                 <picture>
                   <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/our-portfolio/medit-mob-min.jpg    1x,
+                      ./images/our-portfolio/medit-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/our-portfolio/medit-tab-min.jpg    1x,
+                      ./images/our-portfolio/medit-tab@2x-min.jpg 2x
+                    "
+                  />
+
+                  <source
                     media="(min-width: 1158px)"
                     srcset="
                       ./images/our-portfolio/medit-desk-min.jpg    1x,
                       ./images/our-portfolio/medit-desk@2x-min.jpg 2x
                     "
-                    width="360"
-                  />
-                  <source
-                    media="(min-width: 1158px)"
-                    srcset="
-                      ./images/our-portfolio/medit-tab-min.jpg    1x,
-                      ./images/our-portfolio/medit-tab@2x-min.jpg 2x
-                    "
-                    width="356"
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./images/our-portfolio/medit-mob-min.jpg    1x,
-                      ./images/our-portfolio/medit-mob@2x-min.jpg 2x
-                    "
-                    width="288"
                   />
 
                   <img
@@ -546,28 +541,27 @@
               <div class="port-img-overlay">
                 <picture>
                   <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/our-portfolio/taxi-mob-min.jpg    1x,
+                      ./images/our-portfolio/taxi-mob@2x-min.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/our-portfolio/taxi-tab-min.jpg    1x,
+                      ./images/our-portfolio/taxi-tab@2x-min.jpg 2x
+                    "
+                  />
+
+                  <source
                     media="(min-width: 1158px)"
                     srcset="
                       ./images/our-portfolio/taxi-desk-min.jpg    1x,
                       ./images/our-portfolio/taxi-desk@2x-min.jpg 2x
                     "
-                    width="360"
-                  />
-                  <source
-                    media="(min-width: 1158px)"
-                    srcset="
-                      ./images/our-portfolio/taxi-tab-min.jpg    1x,
-                      ./images/our-portfolio/taxi-tab@2x-min.jpg 2x
-                    "
-                    width="356"
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./images/our-portfolio/taxi-mob-min.jpg    1x,
-                      ./images/our-portfolio/taxi-mob@2x-min.jpg 2x
-                    "
-                    width="288"
                   />
 
                   <img
@@ -591,28 +585,27 @@
               <div class="port-img-overlay">
                 <picture>
                   <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/our-portfolio/illustrations-mob-min.jpg    1x,
+                      ./images/our-portfolio/illustrations-mob@2x-min.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/our-portfolio/illustrations-tab-min.jpg    1x,
+                      ./images/our-portfolio/illustrations-tab@2x-min.jpg 2x
+                    "
+                  />
+
+                  <source
                     media="(min-width: 1158px)"
                     srcset="
                       ./images/our-portfolio/illustrations-desk-min.jpg    1x,
                       ./images/our-portfolio/illustrations-desk@2x-min.jpg 2x
                     "
-                    width="360"
-                  />
-                  <source
-                    media="(min-width: 1158px)"
-                    srcset="
-                      ./images/our-portfolio/illustrations-tab-min.jpg    1x,
-                      ./images/our-portfolio/illustrations-tab@2x-min.jpg 2x
-                    "
-                    width="356"
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./images/our-portfolio/illustrations-mob-min.jpg    1x,
-                      ./images/our-portfolio/illustrations-mob@2x-min.jpg 2x
-                    "
-                    width="288"
                   />
 
                   <img
@@ -636,28 +629,27 @@
               <div class="port-img-overlay">
                 <picture>
                   <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/our-portfolio/curs-mob-min.jpg    1x,
+                      ./images/our-portfolio/curs-mob@2x-min.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/our-portfolio/curs-tab-min.jpg    1x,
+                      ./images/our-portfolio/curs-tab@2x-min.jpg 2x
+                    "
+                  />
+
+                  <source
                     media="(min-width: 1158px)"
                     srcset="
                       ./images/our-portfolio/curs-desk-min.jpg    1x,
                       ./images/our-portfolio/curs-desk@2x-min.jpg 2x
                     "
-                    width="360"
-                  />
-                  <source
-                    media="(min-width: 1158px)"
-                    srcset="
-                      ./images/our-portfolio/curs-tab-min.jpg    1x,
-                      ./images/our-portfolio/curs-tab@2x-min.jpg 2x
-                    "
-                    width="356"
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./images/our-portfolio/curs-mob-min.jpg    1x,
-                      ./images/our-portfolio/curs-mob@2x-min.jpg 2x
-                    "
-                    width="288"
                   />
 
                   <img
@@ -735,7 +727,7 @@
 
         <div class="cont-input-footer">
           <p class="text-input-footer">Subscribe</p>
-          <form class="fofm-footer">
+          <form class="form-footer">
             <label class="label-footer" for="footer">
               <input
                 class="input-footer"
@@ -760,9 +752,9 @@
 
     <!-- #region form-modal -->
 
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop is.open">
       <div class="modal">
-        <button type="button" class="btn-close" data-modal-close>
+        <button type="button" class="btn-close">
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
