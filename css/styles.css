@@ -184,13 +184,14 @@ button {
 /*
     pointer-events: none;
     visibility: hidden;
-    /*
+    */
 
 .container-menu .is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-}*/
+}
+
 
 .menu-list {
     display: flex;
@@ -352,7 +353,9 @@ button {
 .features-list {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 72px;
+
 }
 
 .features-text {
