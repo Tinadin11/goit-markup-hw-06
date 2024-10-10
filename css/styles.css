@@ -91,7 +91,7 @@ button {
     background-color: var(--white);
 }
 
-.container {
+.container-mob {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
