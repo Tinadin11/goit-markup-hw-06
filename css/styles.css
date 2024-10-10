@@ -91,7 +91,7 @@ button {
     background-color: var(--white);
 }
 
-.container-mob {
+.container {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
@@ -186,13 +186,11 @@ button {
     visibility: hidden;
     /*
 
-
-/*???*/
 .container-menu .is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-}
+}*/
 
 .menu-list {
     display: flex;
