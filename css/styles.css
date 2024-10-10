@@ -87,14 +87,6 @@ button {
 
 /* #region header */
 
-@media screen and (max-width: 767px) {
-
-    .menu-list,
-    .header-contacts {
-        display: none;
-    }
-}
-
 .header {
     background-color: var(--white);
 }
