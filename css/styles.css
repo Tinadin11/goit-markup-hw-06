@@ -1,7 +1,7 @@
 /* basic styles */
 :root {
-    --font-family: 'Roboto', sans-serif;
-    --second-family: 'Raleway', sans-serif;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
 }
 
 :root {
@@ -20,7 +20,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 24px;
     color: var(--slate);
     font-size: 16px;
@@ -89,13 +89,13 @@ button {
     margin: 0 auto;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         padding: 0 15px;
@@ -117,8 +117,6 @@ button {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .menu-list,
 .header-contacts {
@@ -143,7 +141,6 @@ button {
 
 .header-logo .logo-part {
     color: #2e2f42;
-    ;
 }
 
 .menu-burger {
@@ -157,7 +154,7 @@ button {
     fill: #2f2f37;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .menu-burger {
         display: none;
     }
@@ -193,7 +190,6 @@ button {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-
     .menu-nav {
         display: flex;
         align-items: center;
@@ -216,7 +212,7 @@ button {
     }
 
     .menu-link.active::after {
-        content: '';
+        content: "";
         border-radius: 2px;
         height: 4px;
         background: #404bbf;
@@ -233,10 +229,9 @@ button {
     .contacts-link:focus {
         color: #404bbf;
     }
-
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
     .header-logo {
         margin-right: 76px;
     }
@@ -254,7 +249,6 @@ button {
         letter-spacing: 0.02em;
     }
 }
-
 
 .mobile-menu {
     position: fixed;
@@ -286,8 +280,6 @@ button {
     align-items: start;
     padding: 72px 24px 40px 16px;
     margin: 0 auto;
-
-
 }
 
 .menu-close {
@@ -357,7 +349,6 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .mobile-contacts-link:hover,
 .mobile-contacts-link:focus,
 .mobile-menu-link:hover,
@@ -407,7 +398,8 @@ button {
     max-width: 320px;
     padding: 72px 0;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/bg-img/bg-mob-min.jpg);
     background-repeat: no-repeat;
@@ -418,7 +410,8 @@ button {
 
 @media screen and (min-resolution: 192dpi) {
     .section-hero {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/bg-img/bg-mob@2x.jpg);
     }
@@ -457,16 +450,16 @@ button {
 .hero-btn:hover,
 .hero-btn:focus,
 .hero-btn:active {
-    background-color: #404BBF;
+    background-color: #404bbf;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width: 768px) {
     .section-hero {
         max-width: 768px;
         padding: 112px 0;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/bg-img/bg-tab-min.jpg);
     }
@@ -479,29 +472,30 @@ button {
     }
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width:768px) {
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
     .section-hero {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/bg-img/bg-tab@2x.jpg);
     }
 }
 
-
-
-@media screen and (min-width:1156px) {
+@media screen and (min-width: 1156px) {
     .section-hero {
         max-width: 1440px;
         padding: 188px 0;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/bg-img/bg-desk-min.jpg);
     }
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width:1156px) {
+@media screen and (min-resolution: 192dpi) and (min-width: 1156px) {
     .section-hero {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/bg-img/bg-desk@2x.jpg);
     }
@@ -529,7 +523,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-
 }
 
 .features-item {
@@ -558,7 +551,7 @@ button {
     color: #434455;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .features-list {
         column-gap: 24px;
     }
@@ -570,10 +563,9 @@ button {
     .features-subtitle {
         text-align: start;
     }
-
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
     .section-features {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -615,7 +607,6 @@ button {
     .features-text {
         font-weight: 400;
     }
-
 }
 
 /* #endregion section 1 */
@@ -657,9 +648,10 @@ button {
 
 .team-item {
     min-width: 264px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 0 0 4px 4px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-card-content {
@@ -697,7 +689,7 @@ button {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #4D5AE5;
+    background-color: #4d5ae5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -707,7 +699,7 @@ button {
 
 .social-link:focus,
 .social-link:hover {
-    background-color: #404BBF;
+    background-color: #404bbf;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -723,10 +715,9 @@ button {
     .team-item {
         width: calc((100% - 24px * 1) / 2);
     }
-
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
     .section-team {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -749,7 +740,7 @@ button {
 
     .social-link:focus,
     .social-link:hover {
-        background-color: #404BBF;
+        background-color: #404bbf;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -815,21 +806,17 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-
     .portfolio-list {
-
         column-gap: 24px;
         row-gap: 72px;
     }
 
-
     .portfolio-item {
         width: calc((100% - 24px) / 2);
     }
-
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
     .section-portfolio {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -846,7 +833,6 @@ button {
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-
     .port-img-overlay {
         width: 100%;
         height: 100%;
@@ -854,11 +840,10 @@ button {
         overflow: hidden;
     }
 
-
     .text-overlay {
         display: flex;
         color: #f4f4fd;
-        background-color: #4D5AE5;
+        background-color: #4d5ae5;
         position: absolute;
         top: 0;
         left: 0;
@@ -866,7 +851,7 @@ button {
         height: 100%;
         padding: 40px 32px;
         transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .portfolio-item:hover .text-overlay {
@@ -875,7 +860,8 @@ button {
 
     .portfolio-item:hover,
     .portfolio-item:focus-visible {
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 }
 
@@ -896,7 +882,6 @@ button {
     gap: 72px;
 }
 
-
 .footer-part-logo {
     margin-bottom: 72px;
 }
@@ -912,7 +897,6 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-
 }
 
 .footer-logo-part {
@@ -936,7 +920,6 @@ button {
 }
 
 .footer-social-title {
-
     font-weight: 500;
     display: flex;
     font-size: 16px;
@@ -968,7 +951,7 @@ button {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #4D5AE5;
+    background-color: #4d5ae5;
     fill: #f4f4fd;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -979,10 +962,9 @@ button {
 
 .items-link:focus,
 .items-link:hover {
-    background-color: #31D0AA;
+    background-color: #31d0aa;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .text-input-footer {
     font-weight: 500;
@@ -1043,17 +1025,18 @@ button {
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-telegram {
     fill: #fff;
     margin-left: 16px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width: 768px) {
     .footer .footer-container {
         margin: 0 auto;
         padding: 0 108px;
@@ -1064,7 +1047,6 @@ button {
         column-gap: 24px;
         margin-bottom: 72px;
     }
-
 
     .footer-logo {
         display: inline-block;
@@ -1103,11 +1085,9 @@ button {
     .label-footer {
         width: 264px;
     }
-
-
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
     .footer {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -1117,7 +1097,6 @@ button {
         display: flex;
         padding: 0 15px;
     }
-
 
     .box {
         margin: 0;
@@ -1136,11 +1115,9 @@ button {
         width: 115px;
     }
 
-
     .footer-social {
         margin: 0 auto;
     }
-
 
     .text-input-footer {
         text-align: start;
@@ -1163,12 +1140,13 @@ button {
     .icon-telegram:hover,
     .icon-telegram:focus {
         fill: #f4f4fd;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-style 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-style 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
 /* #endregion footer */
-
 
 /* #region form-modal */
 .backdrop {
@@ -1422,7 +1400,7 @@ button {
     transform: translate(-50%, -100%) scale(1.5);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .modal {
         width: 408px;
         min-height: 584px;
@@ -1434,18 +1412,18 @@ button {
     }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
 
     .btn-close:hover,
     .btn-close:focus {
         border: none;
-        background-color: #404BBF;
+        background-color: #404bbf;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .btn-close:hover .icon-close,
     .btn-close:focus .icon-close {
-        fill: #FFFFFF;
+        fill: #ffffff;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
