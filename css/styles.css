@@ -229,8 +229,8 @@ button {
     .menu-link:hover,
     .menu-link:focus,
     .menu-link.active,
-    .header-contacts:hover,
-    .header-contacts:focus {
+    .contacts-link:hover,
+    .contacts-link:focus {
         color: #404bbf;
     }
 
@@ -285,7 +285,7 @@ button {
     flex-direction: column;
     height: 100%;
     align-items: start;
-    ;
+
 }
 
 .menu-close {
@@ -430,7 +430,7 @@ screen and (min-resolution: 192dpi) {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 216px;
+    max-width: 216px;
     margin: 0 auto;
     margin-bottom: 72px;
 }
@@ -712,10 +712,19 @@ screen and (min-resolution: 192dpi) {
 }
 
 @media screen and (min-width: 768) {
-    .team-list {
+    /*.team-list {
         column-gap: 24px;
         row-gap: 64px;
+    }*/
+
+    .team-list {
+        gap: 24px;
     }
+
+    .team-item {
+        width: calc((100% - 108px) / 2);
+    }
+
 }
 
 @media screen and (min-width:1158px) {
@@ -724,8 +733,15 @@ screen and (min-resolution: 192dpi) {
         padding-bottom: 120px;
     }
 
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+    }
+
     .team-item {
-        width: calc((100% - 3 * 24px) / 4);
+        width: calc((100% - 72px) / 4);
     }
 
     .social-link:focus,
@@ -1053,7 +1069,9 @@ screen and (min-resolution: 192dpi) {
     }
 
     .box {
-        margin-right: 120px;
+        display: flex;
+        margin-right: 80px;
+        gap: 120;
     }
 
     .footer-social {
