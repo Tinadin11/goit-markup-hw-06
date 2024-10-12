@@ -279,12 +279,14 @@ button {
 
 .mobile-menu-container {
     position: relative;
-    padding: 72px 24px 40px 16px;
-
     display: flex;
     flex-direction: column;
+    max-width: 320px;
     height: 100%;
     align-items: start;
+    padding: 72px 24px 40px 16px;
+    margin: 0 auto;
+
 
 }
 
@@ -469,10 +471,16 @@ screen and (min-resolution: 192dpi) {
                 rgba(46, 47, 66, 0.7)),
             url(../images/bg-img/bg-tab-min.jpg);
     }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
 }
 
-@media screen and (min-divice-pixel-ratio: 2),
-screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi) {
     .section-hero {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -480,12 +488,7 @@ screen and (min-resolution: 192dpi) {
     }
 }
 
-.hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    max-width: 496px;
-    margin-bottom: 36px;
-}
+
 
 @media screen and (min-width:1156px) {
     .section-hero {
@@ -536,12 +539,11 @@ screen and (min-resolution: 192dpi) {
 }
 
 .features-subtitle {
-    margin-bottom: 8px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
     margin-bottom: 8px;
     color: #2e2f42;
 }
@@ -712,17 +714,13 @@ screen and (min-resolution: 192dpi) {
 }
 
 @media screen and (min-width: 768) {
-    /*.team-list {
-        column-gap: 24px;
-        row-gap: 64px;
-    }*/
 
     .team-list {
-        gap: 24px;
+        column-gap: 24px;
     }
 
     .team-item {
-        width: calc((100% - 108px) / 2);
+        width: calc((100% - 24px * 1) / 2);
     }
 
 }
@@ -883,23 +881,40 @@ screen and (min-resolution: 192dpi) {
     padding-bottom: 96px;
 }
 
-.footer-container {
+.footer.footer-container {
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 72px;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .box {
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
+.footer-part-logo {
+    margin-bottom: 72px;
+}
+
 .footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
     display: flex;
     align-items: center;
-    width: 115px;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 116px;
     height: 24px;
+    margin: 0 auto;
     margin-bottom: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+
 }
 
 .footer-logo-part {
@@ -907,23 +922,33 @@ screen and (min-resolution: 192dpi) {
 }
 
 .footer-text {
-    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
 
 .footer-social {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .footer-social-title {
+
     font-weight: 500;
     display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
     align-items: center;
     justify-content: center;
     color: #fff;
     margin-bottom: 16px;
-    margin-left: 0;
 }
 
 .footer-social-list {
@@ -957,8 +982,26 @@ screen and (min-resolution: 192dpi) {
 .items-link:focus,
 .items-link:hover {
     background-color: #31D0AA;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.cont-input-footer {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+.text-input-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
+}
 
 .form-footer {
     display: flex;
@@ -997,10 +1040,10 @@ screen and (min-resolution: 192dpi) {
     align-items: center;
     text-align: center;
     justify-content: center;
+    flex-direction: row;
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
-    padding-right: 16px;
     min-width: 165px;
     height: 40px;
     font-weight: 500;
@@ -1019,20 +1062,38 @@ screen and (min-resolution: 192dpi) {
 }
 
 @media screen and (min-width:768px) {
-    .footer-container {
+
+    .footer.footer-container {
+        margin: 0 auto;
+    }
+
+    .box {
+        display: flex;
+        padding: 0 108px;
         flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
         column-gap: 24px;
-        row-gap: 72px;
-        min-width: 584px;
+        margin: 0 auto;
+        margin-bottom: 72px;
+    }
+
+
+
+    .footer-part-logo {
+        margin: 0 auto;
     }
 
     .footer-logo {
         display: inline-block;
-        margin-bottom: 16px;
     }
 
     .footer-text {
         width: 264px;
+    }
+
+    .footer-social {
+        margin: 0 auto;
     }
 
     .footer-social-title {
@@ -1040,12 +1101,13 @@ screen and (min-resolution: 192dpi) {
         margin-bottom: 16px;
     }
 
-    .footer-social {
-        margin: 0;
-    }
-
     .form-footer {
         gap: 24px;
+    }
+
+    .cont-input-footer {
+        align-items: flex-start;
+        margin: 0 auto;
     }
 
     .input-footer {
@@ -1055,6 +1117,8 @@ screen and (min-resolution: 192dpi) {
     .label-footer {
         width: 264px;
     }
+
+
 }
 
 @media screen and (min-width:1158px) {
@@ -1066,26 +1130,37 @@ screen and (min-resolution: 192dpi) {
     .footer-container {
         min-width: 1158px;
         gap: 0;
+        display: flex;
+        align-items: baseline;
     }
 
     .box {
-        display: flex;
         margin-right: 80px;
-        gap: 120;
+        gap: 120px;
     }
+
+    .footer-part-logo {
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
+        width: 115px;
+    }
+
 
     .footer-social {
         margin: 0 auto;
     }
 
-    .items-link:focus,
-    .items-link:hover {
-        background-color: #31D0AA;
+
+    .text-input-footer {
+        text-align: start;
     }
 
-    .cont-input-footer {
-        margin-left: auto;
-    }
+
 
     .form-footer {
         display: flex;
