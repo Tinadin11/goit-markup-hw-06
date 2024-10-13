@@ -1328,9 +1328,22 @@ button {
     margin-bottom: 24px;
 }
 
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    cursor: pointer;
+}
+
 .cust-checkbox {
+    width: 16px;
+    height: 16px;
     margin-right: 8px;
-    padding: 4px 3px;
+    flex-shrink: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1353,16 +1366,6 @@ button {
     fill: #f4f4fd;
 }
 
-.label-checkbox {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    cursor: pointer;
-}
 
 .privacy-text {
     font-size: 12px;
