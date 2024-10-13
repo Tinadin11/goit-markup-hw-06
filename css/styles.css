@@ -1029,11 +1029,26 @@ button {
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-footer-mail:hover,
+.btn-footer-mail:focus {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #404bbf;
+
+}
+
 .icon-telegram {
     fill: #fff;
     margin-left: 16px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-telegram:hover,
+.icon-telegram:focus {
+    fill: #eeeef5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-style 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1129,20 +1144,6 @@ button {
 
     .input-footer:focus {
         border-color: #4d5ae5;
-    }
-
-    .btn-footer-mail:hover,
-    .btn-footer-mail:focus {
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        background-color: #404bbf;
-    }
-
-    .icon-telegram:hover,
-    .icon-telegram:focus {
-        fill: #f4f4fd;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border-style 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -1329,8 +1330,7 @@ button {
 
 .cust-checkbox {
     margin-right: 8px;
-    width: 16px;
-    height: 16px;
+    padding: 3px 2px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
